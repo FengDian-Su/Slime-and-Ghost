@@ -1,0 +1,108 @@
+
+.game-area {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.background{
+    background: url("background.jpg") repeat-x;
+    background-size: 600px 300px;
+    width: 2400px;
+    height: 500px;
+    animation: slide 20s linear infinite;
+    opacity: 1;
+}
+
+.Timer {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    color: rgb(200, 200, 200);
+    font-size: 26px;
+}
+.start{
+    position: absolute;
+    left: 240px;
+    top: 120px;
+    width: 120px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:rgb(200, 200, 200);
+    font-size: 26px;
+    text-align: center;
+    transition: all 0.1s ease;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.start:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(100);
+    }
+    100% {
+      transform: translate(-1800px);
+    }
+}
+
+.role {
+    width: 40px;
+    height: 30px;
+    background: url("slime.png");
+    background-size: 40px 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.npc {
+    width: 35px;
+    height: 40px;
+    background: url("ghost.png");
+    background-size: 35px 40px;
+    position: absolute;
+    left: 610px;
+    bottom: 70px;
+    display: none;
+    animation: slide 7s linear infinite;
+}
+
+.npc2 {
+    width: 35px;
+    height: 40px;
+    background: url("ghost.png");
+    background-size: 35px 40px;
+    position: absolute;
+    left: 666px;
+    bottom: 70px;
+    display: none;
+    animation: slide 9s linear infinite;
+}
+
+.gameover {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    transition: all 0.1s ease;
+    text-align: center;
+    font-size: 40px;
+    color:rgb(200, 200, 200);
+}
+
+.text-go{
+    position: absolute;
+    left: 80px;
+    padding: 0px;
+    margin: 0px;
+    top: 30px;
+}
